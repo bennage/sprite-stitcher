@@ -39,12 +39,7 @@
 		});
 
 		var dataUrl = canvas.toDataURL('image/png');
-		// dataUrl = dataUrl.replace('image/png', 'image/octet-stream');
-		// document.location.href = dataUrl;
 
-		// window.open(dataUrl,'_blank','height=300,width=400');
-
-		// document.body.appendChild(canvas);
 		var sheet = new Image();
 		sheet.src = dataUrl;
 		document.querySelector('section[role=output]').appendChild(sheet);
